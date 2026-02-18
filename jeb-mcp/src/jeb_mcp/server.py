@@ -4,6 +4,7 @@ import json
 import os
 import sys
 
+from typing import Annotated, TypeVar
 from fastmcp import FastMCP
 
 # The log_level is necessary for Cline to work: https://github.com/jlowin/fastmcp/issues/81
@@ -73,7 +74,7 @@ GENERATED_PY = os.path.join(SCRIPT_DIR, "server_generated.py")
 def generate():
     with open(GENERATED_PY, "r") as f:
         code = f.read()
-        exec(compile(code, GENERATED_PY, "exec"))
+        exec(compile(code, GENERATED_PY, "exec"), globals())
 
 generate()
 def main():
@@ -82,3 +83,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
