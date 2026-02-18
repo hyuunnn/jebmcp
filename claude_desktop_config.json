@@ -1,0 +1,38 @@
+{
+  "preferences": {
+    "sidebarMode": "chat",
+    "coworkScheduledTasksEnabled": false
+  },
+  "mcpServers": {
+    "jeb": {
+      "command": "/Users/hyun/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/Users/hyun/Desktop/jebmcp/jeb-mcp",
+        "run",
+        "src/jeb_mcp/server.py"
+      ],
+      "timeout": 1800,
+      "disabled": false,
+      "autoApprove": [
+        "ping",
+        "check_connection",
+        "get_manifest",
+        "get_all_exported_activities",
+        "get_class_decompiled_code",
+        "get_method_decompiled_code",
+        "get_method_overrides",
+        "get_method_callers",
+        "get_superclass",
+        "get_interfaces",
+        "get_class_methods",
+        "get_class_fields",
+        "get_field_callers",
+        "rename_class_name",
+        "rename_method_name",
+        "rename_class_field",
+        "check_java_identifier"
+      ]
+    }
+  }
+}
