@@ -32,6 +32,25 @@
         "rename_method_name",
         "rename_class_field",
         "check_java_identifier"
+      ],
+      "alwaysAllow": [
+        "check_connection",
+        "get_class_decompiled_code",
+        "get_class_fields",
+        "ping",
+        "get_manifest",
+        "get_all_exported_activities",
+        "get_exported_activities_count",
+        "get_an_exported_activity_by_index",
+        "get_method_decompiled_code",
+        "get_method_callers",
+        "get_method_overrides",
+        "get_superclass",
+        "get_interfaces",
+        "get_class_methods",
+        "rename_class_name",
+        "rename_method_name",
+        "rename_class_field"
       ]
     }
   }
