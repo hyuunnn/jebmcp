@@ -1,0 +1,54 @@
+model = "gpt-5.3-codex"
+model_reasoning_effort = "xhigh"
+
+[mcpServers.jeb]
+command = "uv"
+timeout = 1800
+disabled = false
+
+args = [
+  "--directory",
+  "/Users/hyun/Desktop/jebmcp/jeb-mcp",
+  "run",
+  "src/jeb_mcp/server.py"
+]
+
+autoApprove = [
+  "ping",
+  "check_connection",
+  "get_manifest",
+  "get_all_exported_activities",
+  "get_class_decompiled_code",
+  "get_method_decompiled_code",
+  "get_method_overrides",
+  "get_method_callers",
+  "get_superclass",
+  "get_interfaces",
+  "get_class_methods",
+  "get_class_fields",
+  "get_field_callers",
+  "rename_class_name",
+  "rename_method_name",
+  "rename_class_field",
+  "check_java_identifier"
+]
+
+alwaysAllow = [
+  "ping",
+  "check_connection",
+  "get_manifest",
+  "get_all_exported_activities",
+  "get_class_decompiled_code",
+  "get_method_decompiled_code",
+  "get_method_overrides",
+  "get_method_callers",
+  "get_superclass",
+  "get_interfaces",
+  "get_class_methods",
+  "get_class_fields",
+  "get_field_callers",
+  "rename_class_name",
+  "rename_method_name",
+  "rename_class_field",
+  "check_java_identifier"
+]
